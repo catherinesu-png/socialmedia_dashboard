@@ -40,7 +40,7 @@ def plot_all_metrics(df):
     for i, metric in enumerate(metrics):
         ax = axs[i]
         make_plot(ax, df, metric)
-        #TODO add error checking? 
+        #TODO add error checking
     fig.suptitle("Instagram Engagement Metrics over Time", fontsize = 20)
     plt.tight_layout()
     plt.show()
@@ -55,7 +55,7 @@ def make_plot(ax, df, engagement_metric):
     ax.set_xlabel("Week")
     ax.set_ylabel(engagement_metric)
     
-    ax.xaxis.set_major_locator(mpdates.MonthLocator(bymonthday = 1 )) #interval = 2 let's see how it looks first
+    ax.xaxis.set_major_locator(mpdates.MonthLocator(bymonthday = 1))
     ax.xaxis.set_major_formatter(mpdates.DateFormatter("%b %Y"))
     ax.tick_params(axis = "x", rotation = 45)
     
