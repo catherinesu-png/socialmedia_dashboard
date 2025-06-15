@@ -6,6 +6,7 @@ Python tool for visualizing Instagram performance over time given weekly data.
 
 ## Example Output
  [Dashboard Preview](sampleoutput.png)
+ 
 ## TODO 
-- Develop analysis module
-- Integrate Instagram Graph API (replaces manual Excel updating)
+- Develop analysis module - more realistic follower forecasting
+- Integrate Instagram Graph API (replace manual Excel updating, more detailed post performance insights)
