@@ -1,5 +1,5 @@
 # Instagram Engagement Metrics Tracker
-Python tool for visualizing Instagram performance over time given weekly data.
+Python tool for visualizing Instagram performance over time given weekly engagement data.
 
 ## Features 
 - 6-metric dashboard from Excel file
