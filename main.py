@@ -6,13 +6,16 @@ from analysis import top_growth_weeks
 
 
 def main():
-    starting_followers = 27020
-    df = load_data("Social Media Analytics.xlsx")
+    starting_followers = 1008
+    known_growth = {("2023-07-01", "2023-09-01"): (430, 516), ("2024-07-01", "2024-09-01"): (988, 1161) }
+    
+    df = load_data("Instagram Analytics Sample.xlsx")
     df = add_cumulative_followers(df, starting_followers)
     
     vd.plot_all_metrics(df)
     vd.plot_one_metric(df, "New Followers")
-    forecast_followers(df)
+
+    forecast_followers(df, known_growth, periods = 15)
     top_growth_weeks(df)
     
     
